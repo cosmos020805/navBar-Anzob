@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Anzob</title>
+</head>
+
+<body>
+  <nav class="flex bg-[#13161d] justify-between p-5 text-lg text-white">
+    <div class="text-2xl">Anzob</div>
+    <div class="flex gap-7">
+      <div>+992983350000</div>
+      
+      <div class="duration-" onclick="hum()"><i class="fa-solid fa-bars"></i></div>
+      </div>
+  </nav>
+  <div id="burg" class="w-full bg-[#2c3343] hidden text-xl">
+    <ul class="pt-4 py-6">
+      <li class="p-3 text-white cursor-pointer text-center">Services</li>
+      <li class="p-3 text-white cursor-pointer text-center">Cases</li>
+      <li class="p-3 text-white cursor-pointer text-center">Contact us</li>
+     </ul>
+    </div>
+  <script>
+    function hum() {
+      let burg = document.getElementById("burg")
+      if (burg.style.display === "block") {
+        burg.style.display = "none"
+      } else {
+        burg.style.display = "block"
+      }
+    }
+  </script>
+</body>
+
+</html>
